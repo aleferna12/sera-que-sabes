@@ -1,4 +1,13 @@
 {
   "O que caracteriza um triângulo retângulo?": "Um dos ângulos ser de 90°",
-  "O que é o denominador de uma divisão?": "O número de partes pelo qual o numerador é dividido"
+  "O que é o denominador de uma divisão?": "O número de partes pelo qual o numerador é dividido",
+  "O que é um número primo?": "Um número é primo se for divisível somente por 1 e por ele mesmo",
+  "Todos os quadrados são retângulos?": "Sim",
+  "Todos os retângulos são quadrados?": "Não",
+  "Quais são os 5 primeiros dígitos de PI?": "3.1415",
+  "No dia do PI (14/03) nasceu o talvez mais famoso físico do século XX, quem é?" : "Albert Einstein",
+  "Complete o próximo número na série de Fibonacci :  1, 1, 2, 3, 5, 8, 13, ___?" : "21",
+  "Um trilhão tem quantos zeros?": "12",
+  "Qual a representação de 40 em numeração romana?" : "XL",
+  "Em cálculo, como se chama o oposto de uma integral?": "Derivada"
 }
