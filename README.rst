@@ -15,7 +15,7 @@ TODO
 Créditos:
 ---------
 
-**Código:*** Alexandre Porcher Fernandes
+**Código:** Alexandre Porcher Fernandes
 
 **Base de dados de trivia:** Bernardo Jesus e Diogo Alves
 
