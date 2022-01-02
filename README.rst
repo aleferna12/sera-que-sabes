@@ -20,7 +20,6 @@ Código: Alexandre Porcher Fernandes
 Base de dados de trivia: Bernardo Jesus e Diogo Alves
 
 Ícones e vector art:
-
   - Ícone das categorias de perguntas: Freepik_
   - Ícone de "restart game": `Gregor Cresnar`_
   - Ícone de "virar carta": Smashicons_
