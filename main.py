@@ -27,8 +27,9 @@ class PlayerBox(kv.BoxLayout):
 		super().__init__(**kwargs)
 
 		player_ti = PlayerTextInput()
-		self.add_widget(player_ti)
+		player_ti.bind(text=self.setter("player_name"))
 		self.bind(player_name=player_ti.setter("text"))
+		self.add_widget(player_ti)
 
 		self.medals_layout = kv.BoxLayout(padding="10dp", spacing="10dp")
 		self.add_widget(self.medals_layout)
@@ -41,7 +42,7 @@ class PlayerBox(kv.BoxLayout):
 	def check_win(self):
 		if all([medal.state == "down" for medal in self.medals_layout.children]):
 			app.reset_game()
-			sound = kv.SoundLoader().load("./Win/win_sound.mp3")
+			sound = kv.SoundLoader().load("./Win/win_sound.wav")
 			sound.volume = 0.3
 			sound.play()
 			WinPopup(title=f"Parabéns {self.player_name}!").open()
@@ -94,6 +95,7 @@ class QuestionCard(kv.ButtonBehavior, kv.BoxLayout):
 	qa_label = kv.ObjectProperty()
 	text_label = kv.ObjectProperty()
 	icon_image = kv.ObjectProperty()
+	flip_image = kv.ObjectProperty()
 
 	def __init__(self, category="", **kwargs):
 		super().__init__(**kwargs)
@@ -108,12 +110,14 @@ class QuestionCard(kv.ButtonBehavior, kv.BoxLayout):
 		self.angle = 0
 		self.flip_anim.start(self)
 		self.icon_image.opacity = 0
+		self.flip_image.opacity = 0
 		self.text_label.text = ""
 		self.qa_label.text = ""
 		self.displaying_question = not self.displaying_question
 
 	def restitute_content(self, *args):
 		self.icon_image.opacity = 1
+		self.flip_image.opacity = 1
 		if self.displaying_question:
 			self.text_label.text = self.question
 			self.qa_label.text = "Pergunta"
