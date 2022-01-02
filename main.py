@@ -168,7 +168,6 @@ class ResetButton(kv.Button):
 
 class MainApp(kv.App):
 	questions = kv.ObjectProperty()
-	# TODO: change unique colors for each category
 	category_colors = kv.DictProperty({
 		"art": (0.698, 0.133, 0.133),
 		"science": (0.18, 0.545, 0.341),
