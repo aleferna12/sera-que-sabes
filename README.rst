@@ -11,3 +11,20 @@ Instalação:
 -----------
 
 TODO
+
+Créditos:
+---------
+
+Código: Alexandre Porcher Fernandes
+Base de dados de trivia: Bernardo Jesus e Diogo Alves
+Ícones e vector art:
+  - Ícone das categorias de perguntas: Freepik_
+  - Ícone de "restart game": Gregor Cresnar_
+  - Ícone de "virar carta": Smashicons_
+  
+Arte extraída do portal Flaticon_
+
+.. _Freepik: https://www.flaticon.com/authors/freepik
+.. _Gregor Cresnar: https://www.flaticon.com/authors/gregor-cresnar
+.. _Smashicons: https://www.flaticon.com/authors/smashicons
+.. _Flaticon: https://www.flaticon.com/
