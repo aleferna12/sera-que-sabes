@@ -1,5 +1,7 @@
-Será Que Sabes?
+|app_icon| Será Que Sabes?
 ===============
+
+.. |app_icon| image:: https://raw.githubusercontent.com/aleferna12/sera-que-sabes/master/app_icon.png
 
 O Será Que Sabes é um jogo desenvolvido experimentalmente na cadeira de Sistemas Multimédia da Universidade do Porto, Portugal.
 
