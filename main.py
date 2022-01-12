@@ -104,9 +104,11 @@ class QuestionCard(kv.ButtonBehavior, kv.BoxLayout):
 		self.question, self.answer = app.questions.pop_question(category)
 		self.displaying_question = True
 		self.flip_anim = kv.Animation(angle=180, duration=0.3)
-		self.flip_anim.bind(on_complete=self.restitute_content)
+		self.flip_anim.bind(on_complete=self.restore_content)
+		self.flip_sound = kv.SoundLoader.load("./Questions/flip_card.wav")
 
 	def flip_card(self):
+		self.flip_sound.play()
 		self.angle = 0
 		self.flip_anim.start(self)
 		self.icon_image.opacity = 0
@@ -115,7 +117,7 @@ class QuestionCard(kv.ButtonBehavior, kv.BoxLayout):
 		self.qa_label.text = ""
 		self.displaying_question = not self.displaying_question
 
-	def restitute_content(self, *args):
+	def restore_content(self, *args):
 		self.icon_image.opacity = 1
 		self.flip_image.opacity = 1
 		if self.displaying_question:
